@@ -1,2 +1,2 @@
-# Primeiro Repsitório 
-Repositório cirado para Desafios/projetos, espero que gostem...
+# Primeiro Repositório 
+Repositório criado para Desafios/projetos
