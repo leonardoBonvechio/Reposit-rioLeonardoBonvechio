@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta= charset="utf-8"/>
+        <title> Atividade Nota </title>
+    </head>
+    <body>
+        <center>
+        <table>
+            <thead>
+                   <tr>
+                     <th>Nota 1</th>
+                     <th> <input type="text" id="nota1"></th>
+                    </tr>
+                    <br>
+                    <tr>
+                        <th>Nota 2</th>
+                        <th> <input type="text" id="nota2"></th>
+                       </tr>
+                       <br>
+                    <tr>
+                        <th>Nota 3</th>
+                        <th> <input type="text" id="nota3"></th>
+                       </tr>
+                       <br>
+                    <tr>
+                        <th>Nota 4</th>
+                        <th> <input type="text" id="nota4"></th>
+                       </tr>
+                       <br>
+                       <tr>
+                           <th colspan="2"><input type="button" id="botao" width="100px" onclick="calc()" value="Calcular" ></th>
+                       </tr>
+            </thead>            
+          </table>
+        </center>
+    </body>
+</html>
+<script>
+    function calc(){
+        var a = parseFloat(document.getElementById("nota1").value);
+        var b = parseFloat(document.getElementById("nota2").value);
+        var c = parseFloat(document.getElementById("nota3").value);
+        var d = parseFloat(document.getElementById("nota4").value);
+
+        var mediap = (a * 0.5) + (b * 0.25) + (c * 0.20) + (d * 0.05);
+
+        var mediat = mediap.toFixed(2);
+        var result = "Sua média é: " + mediat;
+
+        
+
+        alert(result);
+    }
+</script>
